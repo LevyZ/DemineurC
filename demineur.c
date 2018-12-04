@@ -27,7 +27,6 @@ int main(){
 	PlaceMine(TableauMine);
 	Jouer(TableauMine, TableauJeu);
 	
-	 return 0;
 }
 
 void Initialisation(tab TabMin, tab TabJeu) { //Initilisation du tableau de mines et de jeu
@@ -41,12 +40,12 @@ void Initialisation(tab TabMin, tab TabJeu) { //Initilisation du tableau de mine
 	}
 }
 
-void AfficheGrille(tab Jeu){ // Affiche la grille de jeu
+void AfficheGrille(tab TabJeu){ // Affiche la grille de jeu
 	int i, j;
 	
 	for(i=0;i<T;i++){
     	for(j=0;j<T;j++){
-      		printf("%c ",Jeu[i][j]);
+      		printf("%c ",TabJeu[i][j]);
     	}
     	printf("\n");
   	}
