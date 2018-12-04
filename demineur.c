@@ -400,13 +400,13 @@ void Jouer(tab TabMin, tab TabJeu){
 		printf("\n");
 		
 		if(TabMin[ligne][colonne] == M){
-			perdu == 1; //Le joueur à perdu
+			perdu = 1; //Le joueur à perdu
 			printf("Vous êtes tombés sur une mine :O \n\n");
 		}else{
 			if(TabJeu[ligne][colonne] != X){
 				printf("Vous avez déja rentré cette valeur.\n\n");
 			}else{
-			//	ChercheMine(TabMin,TabJeu, ligne, colonne);// Recherche du nombre de mines aux alentours
+				ChercheMine(TabMin,TabJeu, ligne, colonne);// Recherche du nombre de mines aux alentours
 				compteur++; 
 			}
 		}
