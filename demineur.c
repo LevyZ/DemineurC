@@ -384,7 +384,7 @@ void Jouer(tab TabMin, tab TabJeu){
 		AfficheGrille(TabJeu);
 		
 		printf("Ligne ? ");
-		scan("%d", &ligne);
+		scanf("%d", &ligne);
 		while((ligne < 0) || (ligne >= T)){
 			printf("Ligne Invalide. Saisissez une nouvelle valeur : ");
 			scanf("%d", &ligne);
